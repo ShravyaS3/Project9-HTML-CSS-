@@ -7,6 +7,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow-x:hidden ;
+}
 html {
   font-size: 62.5%;
 }
@@ -81,6 +84,9 @@ svg {
 .cards {
   display: flex;
   flex-direction: row;
+  position: relative;
+  left: 3rem;
+  top: 3rem;
 }
 .card-active {
   width: 20rem ;
@@ -106,7 +112,7 @@ svg {
 }
 .card {
   position: relative;
-  left: 3rem ;
+  left: 7rem ;
 } 
 .card-logo {
   margin-left: 2rem ;
@@ -151,7 +157,7 @@ svg {
   right: 15.5rem ;
 }
 .faq-section {
-  margin-top: 15rem ;
+  margin-top: 10rem ;
   padding: 3rem 4rem ;
   background-color: rgb(226, 233, 243);
 }
@@ -182,8 +188,11 @@ svg {
 .faq-image {
   position: absolute;
   right: 0;
-  top: 138.9rem ;
+  top: 134.9rem ;
 
+}
+.faq-image img {
+  height: 36rem;
 }
 .download-section {
   padding: 12rem  5rem ;

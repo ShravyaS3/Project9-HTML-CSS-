@@ -8,15 +8,15 @@
   padding: 0;
 }
 body {
-  overflow-x:hidden ;
+  overflow-x:hidden;
 }
 html {
   font-size: 62.5%;
 }
-
 header {
   background-color: #3944F7;
   height: 40rem;
+ width: auto;
 }
 nav {
   position: relative;
@@ -26,9 +26,9 @@ nav {
 .nav-item {
   display: inline-block;
   margin: 0 1.5rem;
- padding-top: 3rem;
- padding-bottom: 0.5rem; 
- color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem; 
+  color: #fff;
 }
 .nav-item-active {
   background-color: #fff;
@@ -51,10 +51,8 @@ svg {
   width: 60rem ;
 }
 .header-text h2 {
-
   font-size: 4rem ;
   color: #ffffff;
-
 }
 .header-text p {
   color: #fff;
@@ -283,4 +281,164 @@ input:focus {
 }
 .list-items {
   font-size: 1.5rem;
+}
+@media(max-width:998px) {
+  html {
+      font-size: 55%;
+  }
+}
+@media(max-width:768px) {
+  html {
+      font-size: 45%;
+  }
+}
+@media screen and (max-width:1260px) {
+  .header-image,nav {
+    display: none;
+  }   
+  .logo {
+    position: absolute;
+    top: 55px;
+  }
+  .header-text{
+    position: relative;
+    top: 160px;
+  }
+  .companies{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .company-items{
+    padding-right: 30px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    left: 200px;
+    margin-top: 40px;
+  } 
+  .card {
+    box-shadow: 0 0 4px #ddd;
+    margin-bottom: 30px; 
+    border-radius: 20px;
+    height: 200px;
+  }  
+  .card-active {
+    position: relative;
+    left: 55px;
+    bottom: 15px;
+  }
+  .api{
+    position: relative;
+    left: -20px;
+  }
+  .api h1 {
+    margin-left: 350px;
+    font-size: 40px;
+  }  
+  .faq-image {
+    display: none;
+  } 
+  .blog-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }  
+  .blog-card{
+    margin-bottom: 60px;
+  } 
+  .blog-heading{
+    position: relative;
+    left: 250px;
+    font-size: 30px;
+  }
+  .faq-content{
+    position: relative;
+    left: 200px;
+  }
+  .download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .download-email {
+    position: relative;
+    top: 100px;
+  }
+}
+@media screen and (max-width:998px) {
+  .download-email form {
+    width: 450px;
+    
+  }
+  .download-email{
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .faq-content{
+    position: relative;
+    left: -10px;
+  }
+  .api{
+    position: relative;
+    left: -150px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    left: 300px;
+    margin-top: 40px;
+  } 
+  .blog-author {
+    position: relative;
+    top: 103px;
+  }
+}
+@media screen and (max-width:504px){
+  .footer-left{
+    display: none;
+  }
+  .footer-rights{
+    position: relative;
+    left: 200px;
+  }
+  .api-heading {
+    position: relative;
+    right: 170px;
+  }
+  .card,.card-active {
+    position: relative;
+    left: -50px;
+  }
+  .blog-heading {
+    position: relative;
+    left: 30px;
+  }
+  .blog-author {
+    position: relative;
+    top: 119px;
+  }
+  .blog-card-bottom-image {
+    position: relative;
+    top: 40px;
+  }
+  .faq-section {
+    width: 530px;
+  }
 }
